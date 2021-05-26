@@ -11,7 +11,7 @@ from sqlalchemy import or_, and_
 
 from sqlalchemy import create_engine, func, inspect
 
-engine = create_engine("sqlite:///hawaii.sqlite")
+engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 Base = automap_base()
 Base.prepare(engine, reflect = True)
 Measurement = Base.classes.measurement
